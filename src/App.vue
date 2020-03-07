@@ -1,20 +1,13 @@
 <template>
   <div id="app">
-    <kigu></kigu>
-    <kan-pei-pei></kan-pei-pei>
-    <yugo></yugo>
     <h2>{{ count }}</h2>
     <button v-on:click="increment">plus</button>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Kigu from '@/components/Kigu.vue'
-import KanPeiPei from '@/components/Kanpei.vue'
-import Yugo from '@/components/Yugo.vue'
-
 export default {
-  components: { Kigu, KanPeiPei, Yugo },
   data: function() {
     return {
       // 本通り
